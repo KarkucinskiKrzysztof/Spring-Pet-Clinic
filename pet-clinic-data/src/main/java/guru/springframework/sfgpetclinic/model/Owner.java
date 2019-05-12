@@ -6,7 +6,35 @@ import java.util.Set;
  * Created by jt on 7/13/18.
  */
 public class Owner extends Person {
+
+    private String address;
+    private String city;
+    private int telephon;
     private Set<Pet> pets;
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public int getTelephon() {
+        return telephon;
+    }
+
+    public void setTelephon(int telephon) {
+        this.telephon = telephon;
+    }
 
     public Set<Pet> getPets() {
         return pets;
