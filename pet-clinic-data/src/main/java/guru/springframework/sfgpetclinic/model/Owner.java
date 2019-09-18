@@ -1,16 +1,24 @@
 package guru.springframework.sfgpetclinic.model;
 
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Created by jt on 7/13/18.
- */
+
+@Entity
+@Table(name = "owners")
 public class Owner extends Person {
 
+    @Column(name = "address")
     private String address;
+
+    @Column(name = "city")
     private String city;
-    private int telephon;
+
+    @Column(name = "telephone")
+    private int telephone;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
     private Set<Pet> pets = new HashSet<>();
 
     public String getAddress() {
@@ -29,12 +37,12 @@ public class Owner extends Person {
         this.city = city;
     }
 
-    public int getTelephon() {
-        return telephon;
+    public int getTelephone() {
+        return telephone;
     }
 
-    public void setTelephon(int telephon) {
-        this.telephon = telephon;
+    public void setTelephone(int telephone) {
+        this.telephone = telephone;
     }
 
     public Set<Pet> getPets() {
