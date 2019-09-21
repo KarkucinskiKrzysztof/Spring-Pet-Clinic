@@ -3,9 +3,7 @@ package guru.springframework.sfgpetclinic.model;
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 
-/**
- * Created by jt on 7/13/18.
- */
+
 @MappedSuperclass
 public class Person extends BaseEntity {
 

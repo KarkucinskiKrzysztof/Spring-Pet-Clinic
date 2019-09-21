@@ -4,9 +4,7 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Created by jt on 7/13/18.
- */
+
 @Entity
 @Table(name = "vets")
 public class Vet extends Person {

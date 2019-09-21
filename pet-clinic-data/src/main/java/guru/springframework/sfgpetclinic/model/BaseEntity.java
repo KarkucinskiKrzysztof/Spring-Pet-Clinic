@@ -6,9 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 
-/**
- * Created by jt on 7/18/18.
- */
+
 @MappedSuperclass
 public class BaseEntity implements Serializable {
 

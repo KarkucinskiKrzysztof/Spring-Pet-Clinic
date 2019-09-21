@@ -5,9 +5,7 @@ import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Created by jt on 7/13/18.
- */
+
 @Entity
 @Table(name = "pets")
 public class Pet extends BaseEntity{
