@@ -43,11 +43,10 @@ class OwnerMapServiceTest {
 
     @Test
     void saveNoId() {
-        Owner owner3 = Owner.builder().build();
+
         Owner ownerSaved3 = ownerMapService.save(Owner.builder().build());
         assertNotNull(ownerSaved3);         // dlaczego jak podstawimy tu owner3 to test fail ?
         assertNotNull(ownerSaved3.getId());
-
     }
 
 
