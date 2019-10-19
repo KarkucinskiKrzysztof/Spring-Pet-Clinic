@@ -43,9 +43,8 @@ class OwnerMapServiceTest {
 
     @Test
     void saveNoId() {
-
         Owner ownerSaved3 = ownerMapService.save(Owner.builder().build());
-        assertNotNull(ownerSaved3);         // dlaczego jak podstawimy tu owner3 to test fail ?
+        assertNotNull(ownerSaved3);
         assertNotNull(ownerSaved3.getId());
     }
 
@@ -60,8 +59,6 @@ class OwnerMapServiceTest {
     void deleteById() {
         ownerMapService.deleteById(ownerId);
         assertEquals(0, ownerMapService.findAll().size());
-
-
     }
 
     @Test
@@ -70,7 +67,6 @@ class OwnerMapServiceTest {
         assertNotNull(owner);
         assertEquals(name, owner.getLastName());
         assertEquals(ownerId, owner.getId());
-
     }
 
     @Test
