@@ -27,6 +27,6 @@ public class OwnerController {
     }
     @RequestMapping({"/find"})
     public String findOwners(Model model){
-        return "owners/find";
+        return "notimolemented";
     }
 }
